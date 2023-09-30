@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'editar',
+    loadChildren: () => import('./editar/editar.module').then( m => m.EditarPageModule)
+  },
+  {
+    path: 'nuevo',
+    loadChildren: () => import('./nuevo/nuevo.module').then( m => m.NuevoPageModule)
+  },
 ];
 
 @NgModule({
