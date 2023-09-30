@@ -38,7 +38,7 @@ export class ApiService {
     return this.http.get<Usuario>(this.basePath+'usuario/'+item.id).pipe(retry(2),catchError(this.handleError));
   }
 
-  getList(item:Usuario): Observable<Usuario>{
+  getList(): Observable<Usuario>{
     return this.http.get<Usuario>(this.basePath+'usuario/').pipe(retry(2),catchError(this.handleError));
   }
 
@@ -47,8 +47,8 @@ export class ApiService {
     return this.http.put<Usuario>(this.basePath+'usuario/'+item.id,JSON.stringify(item),this.httpOptions).pipe(retry(2),catchError(this.handleError));
   }
 
-  deleteItem(item:Usuario):Observable<Usuario>{
-    return this.http.delete<Usuario>(this.basePath+'usuario/'+identifierName,this.httpOptions).pipe(retry(2),catchError(this.handleError));
+  deleteItem(id:number):Observable<Usuario>{
+    return this.http.delete<Usuario>(this.basePath+'usuario/'+id,this.httpOptions).pipe(retry(2),catchError(this.handleError));
 
   }
 
