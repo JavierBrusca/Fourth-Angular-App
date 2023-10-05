@@ -1,0 +1,26 @@
+{
+  "usuarios": [
+    {
+      "id": 3,
+      "nombre": "Susuna",
+      "email": "sus1213",
+      "edad": "100"
+    },
+    {
+      "id": 4,
+      "host": "http://localhost:3000/usuarios"
+    },
+    {
+      "id": 5,
+      "nombre": "fqw",
+      "edad": "fef",
+      "email": "fewfw"
+    },
+    {
+      "id": 6,
+      "nombre": "javier",
+      "edad": "12213",
+      "email": "kfqw@ff"
+    }
+  ]
+}
